@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans antialiased bg-[#080808] text-white selection:bg-bmw-blue/30`}>
+      <body className={`${inter.variable} font-sans font-light antialiased bg-black text-white/90 selection:bg-white/20`}>
         <LenisProvider>
           {children}
         </LenisProvider>

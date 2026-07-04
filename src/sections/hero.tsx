@@ -35,7 +35,7 @@ export function Hero() {
         >
           <motion.h1 
             variants={itemVariants} 
-            className="text-5xl md:text-7xl lg:text-9xl font-medium tracking-tighter mb-8 leading-[1.1] text-white"
+            className="text-5xl md:text-7xl lg:text-9xl font-light tracking-tighter mb-8 leading-[1.1] text-white"
           >
             {profile.name}
           </motion.h1>
@@ -49,7 +49,7 @@ export function Hero() {
             ))}
           </motion.div>
 
-          <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-8 text-sm md:text-base font-medium uppercase tracking-widest text-white/70">
+          <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-8 text-xs md:text-sm font-light uppercase tracking-widest text-white/50">
             <a href="#summary" className="hover:text-white transition-colors py-2 border-b border-transparent hover:border-white">
               Professional Summary
             </a>
