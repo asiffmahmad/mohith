@@ -1,8 +1,21 @@
 [
   {
-    "institution": "University of Technology",
-    "degree": "B.S. Computer Science",
-    "year": "2016 - 2020",
-    "coursework": ["Data Structures", "Machine Learning", "Database Systems"]
+    "institution": "University of Greenwich",
+    "degree": "MSc Data Science",
+    "year": "Completed 2025",
+    "coursework": [
+      "Machine Learning",
+      "Big Data Analytics",
+      "Cloud Computing",
+      "Data Mining",
+      "Artificial Intelligence",
+      "Data Visualization"
+    ]
+  },
+  {
+    "institution": "Vishnu Institute of Technology",
+    "degree": "Bachelor of Technology, Electrical and Electronics Engineering",
+    "year": "Completed 2020",
+    "coursework": []
   }
 ]

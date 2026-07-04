@@ -1,8 +1,32 @@
 [
   {
-    "name": "AWS Certified Data Analytics",
-    "issuer": "Amazon Web Services",
-    "date": "2023",
+    "name": "Azure Fundamentals AZ-900",
+    "issuer": "Microsoft",
+    "date": "",
+    "link": "#"
+  },
+  {
+    "name": "Azure Data Fundamentals DP-900",
+    "issuer": "Microsoft",
+    "date": "",
+    "link": "#"
+  },
+  {
+    "name": "Power BI Essential Training",
+    "issuer": "Microsoft / LinkedIn Learning",
+    "date": "",
+    "link": "#"
+  },
+  {
+    "name": "SQL Certification",
+    "issuer": "HackerRank",
+    "date": "",
+    "link": "#"
+  },
+  {
+    "name": "Microsoft Power BI Data Analyst Associate PL-300",
+    "issuer": "Microsoft",
+    "date": "In Progress",
     "link": "#"
   }
 ]

@@ -1,6 +1,12 @@
 import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
 import { Hero } from "@/sections/hero";
 import { About } from "@/sections/about";
+import { Experience } from "@/sections/experience";
+import { Skills } from "@/sections/skills";
+import { Projects } from "@/sections/projects";
+import { Education } from "@/sections/education";
+import { Contact } from "@/sections/contact";
 
 export default function Home() {
   return (
@@ -9,15 +15,13 @@ export default function Home() {
       <div id="home">
         <Hero />
       </div>
-      
-      {/* Other sections will go here */}
-      <div id="about" className="min-h-screen">
-        <About />
-      </div>
-      <div id="experience" className="min-h-screen"></div>
-      <div id="skills" className="min-h-screen"></div>
-      <div id="projects" className="min-h-screen"></div>
-      <div id="contact" className="min-h-screen"></div>
+      <About />
+      <Experience />
+      <Skills />
+      <Projects />
+      <Education />
+      <Contact />
+      <Footer />
     </main>
   );
 }

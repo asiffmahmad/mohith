@@ -1,13 +1,22 @@
 [
- {
-   "title": "Sales Dashboard Analytics",
-   "description": "An interactive dashboard visualizing global sales trends.",
-   "image": "/images/projects/project1.jpg",
-   "github": "https://github.com",
-   "live": "https://demo.com",
-   "stack": ["Python", "Tableau", "Pandas"],
-   "features": ["Real-time data", "Interactive charts", "Export options"],
-   "year": "2023",
-   "category": "Dashboard"
- }
+  {
+    "title": "AI Based Prediction System For Slow Payment Transactions",
+    "description": "Developed an end-to-end Machine Learning system to predict slow payment transactions using historical financial datasets. Improved prediction accuracy by 50%.",
+    "image": "",
+    "github": "",
+    "live": "",
+    "stack": ["Python", "SQL", "Machine Learning", "Azure Machine Learning", "Streamlit", "Plotly"],
+    "features": [
+      "Exploratory Data Analysis",
+      "Feature Engineering",
+      "Logistic Regression",
+      "Random Forest model",
+      "Neural Networks",
+      "Azure Machine Learning pipelines",
+      "Streamlit dashboard",
+      "Plotly visualizations"
+    ],
+    "year": "Recent",
+    "category": "Machine Learning"
+  }
 ]

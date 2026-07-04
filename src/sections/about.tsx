@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
 import about from "@/data/about.json";
+import stats from "@/data/stats.json";
 
 export function About() {
   return (
@@ -20,15 +21,15 @@ export function About() {
               Turning complex data into <span className="text-white/50">elegant solutions.</span>
             </h2>
             <p className="text-xl text-white/60 font-light leading-relaxed mb-8">
-              {about.summary}
+              {about.intro}
             </p>
             
-            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/10">
-              {about.statistics.map((stat, index) => (
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 pt-8 border-t border-white/10">
+              {stats.map((stat, index) => (
                 <div key={index} className="flex flex-col gap-2">
                   <span className="text-4xl md:text-5xl font-medium text-white">
-                    <CountUp end={stat.value} duration={2.5} enableScrollSpy scrollSpyOnce />
-                    <span className="text-bmw-blue">+</span>
+                    <CountUp end={stat.value} duration={2.5} decimals={stat.value % 1 !== 0 ? 1 : 0} enableScrollSpy scrollSpyOnce />
+                    <span className="text-bmw-blue">{stat.suffix}</span>
                   </span>
                   <span className="text-sm text-white/50 uppercase tracking-wider">{stat.label}</span>
                 </div>

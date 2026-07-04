@@ -1,0 +1,27 @@
+[
+  {
+    "label": "Years Experience",
+    "value": 2.8,
+    "suffix": "+"
+  },
+  {
+    "label": "Companies Worked",
+    "value": 1,
+    "suffix": ""
+  },
+  {
+    "label": "Major Projects",
+    "value": 1,
+    "suffix": ""
+  },
+  {
+    "label": "Reporting Automation",
+    "value": 60,
+    "suffix": "%"
+  },
+  {
+    "label": "Accuracy Improvement",
+    "value": 50,
+    "suffix": "%"
+  }
+]

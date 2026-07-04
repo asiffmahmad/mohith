@@ -1,7 +1,9 @@
 {
- "Languages": ["Python", "SQL", "R"],
- "BI": ["Tableau", "PowerBI", "Looker"],
- "Cloud": ["AWS", "GCP"],
- "Database": ["PostgreSQL", "MySQL", "Snowflake"],
- "Tools": ["Git", "Docker", "Jupyter"]
+  "Programming Languages": ["Python", "SQL", "R (Basic)"],
+  "Libraries": ["Pandas", "NumPy", "Scikit-learn"],
+  "Business Intelligence": ["Power BI", "Dashboard Development", "Data Visualization", "KPI Reporting", "Excel"],
+  "Data Engineering": ["ETL Pipelines", "Data Warehousing", "Data Integration", "Data Transformation", "Data Migration", "Data Modelling", "Data Governance", "Data Quality"],
+  "Cloud": ["Azure Data Factory", "Azure Databricks", "Azure Storage", "Azure Machine Learning", "Snowflake"],
+  "Tools": ["Microsoft Excel", "Git", "SharePoint", "Jupyter Notebook", "Power Apps"],
+  "Other Technologies": ["Azure Active Directory", "RBAC", "MFA", "PIM", "VMware Workspace ONE", "Microsoft Intune"]
 }

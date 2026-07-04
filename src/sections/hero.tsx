@@ -47,11 +47,11 @@ export function Hero() {
 
           <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight mb-6">
             Hello.<br />
-            I&apos;m <span className="text-white">{profile.name}</span>.
+            I&apos;m <span className="text-white">{profile.displayName}</span>.
           </motion.h1>
 
           <motion.p variants={itemVariants} className="text-xl md:text-2xl text-white/50 max-w-2xl mx-auto mb-12 font-light">
-            {profile.title}
+            {profile.headline}
           </motion.p>
 
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-4">
