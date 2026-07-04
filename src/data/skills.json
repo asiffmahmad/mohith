@@ -1,0 +1,7 @@
+{
+ "Languages": ["Python", "SQL", "R"],
+ "BI": ["Tableau", "PowerBI", "Looker"],
+ "Cloud": ["AWS", "GCP"],
+ "Database": ["PostgreSQL", "MySQL", "Snowflake"],
+ "Tools": ["Git", "Docker", "Jupyter"]
+}

@@ -1,0 +1,13 @@
+[
+ {
+   "title": "Sales Dashboard Analytics",
+   "description": "An interactive dashboard visualizing global sales trends.",
+   "image": "/images/projects/project1.jpg",
+   "github": "https://github.com",
+   "live": "https://demo.com",
+   "stack": ["Python", "Tableau", "Pandas"],
+   "features": ["Real-time data", "Interactive charts", "Export options"],
+   "year": "2023",
+   "category": "Dashboard"
+ }
+]
