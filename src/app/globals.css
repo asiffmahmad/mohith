@@ -127,7 +127,7 @@
     @apply bg-[#080808] text-foreground antialiased selection:bg-bmw-blue/30 selection:text-white;
   }
   html {
-    @apply scroll-smooth dark;
+    @apply scroll-smooth;
   }
 }
 

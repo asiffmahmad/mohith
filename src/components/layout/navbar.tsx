@@ -37,7 +37,7 @@ export function Navbar() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] as const }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled ? "glass py-4" : "bg-transparent py-6"
       }`}
