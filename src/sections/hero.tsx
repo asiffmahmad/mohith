@@ -31,7 +31,6 @@ export function Hero() {
         <div className="absolute inset-0 bg-[#080808] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/[0.03] via-[#080808] to-[#080808]"></div>
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-bmw-blue/10 rounded-full blur-[128px] mix-blend-screen" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-bmw-red/10 rounded-full blur-[128px] mix-blend-screen" />
-        <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 mix-blend-overlay"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">

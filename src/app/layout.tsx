@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans antialiased bg-[#080808] text-white selection:bg-bmw-blue/30`}>
         <LenisProvider>
           {children}

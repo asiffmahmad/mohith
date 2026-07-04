@@ -46,7 +46,6 @@ export function About() {
             <div className="absolute inset-0 bg-gradient-to-tr from-bmw-blue/10 to-transparent mix-blend-overlay"></div>
             {/* Placeholder for professional photo */}
             <div className="w-full h-full bg-[#111] rounded-2xl flex items-center justify-center border border-white/5 relative overflow-hidden group">
-               <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay"></div>
                <span className="text-white/20 text-sm tracking-widest uppercase relative z-10 group-hover:scale-110 transition-transform duration-700">Image Placeholder</span>
                
                {/* Hover lighting effect */}

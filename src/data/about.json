@@ -1,17 +1,21 @@
 {
-  "summary": "Data Analyst & Business Intelligence Engineer with expertise in transforming complex data into actionable insights.",
+  "summary": "Results-driven Data Analyst with over 2 years and 8 months of experience delivering Business Intelligence, Reporting Automation, ETL Development and Cloud Analytics solutions for enterprise clients including Microsoft. Experienced in Power BI, Azure Data Factory, Azure Databricks, SQL, Python, Data Warehousing, Dashboard Development and Data Engineering. Reduced manual reporting effort by 60% through automation while improving reporting accuracy and operational efficiency. Completed MSc in Data Science from the University of Greenwich. Currently preparing for Microsoft PL-300 Power BI Data Analyst Associate certification. Looking for opportunities in Data Analytics, Business Intelligence and Data Engineering.",
+  "intro": "I enjoy transforming raw enterprise data into meaningful business insights. My expertise spans Business Intelligence, ETL Development, Azure Cloud, SQL, Python, Power BI and Data Engineering. I specialize in building scalable data pipelines, interactive dashboards and automated reporting solutions that improve business decisions. I enjoy solving business problems through data.",
   "statistics": [
     {
       "label": "Years Experience",
-      "value": 5
+      "value": 2.8,
+      "suffix": "+"
     },
     {
-      "label": "Projects Completed",
-      "value": 40
+      "label": "Companies Worked",
+      "value": 1,
+      "suffix": ""
     },
     {
-      "label": "Certifications",
-      "value": 3
+      "label": "Reporting Automation",
+      "value": 60,
+      "suffix": "%"
     }
   ]
 }

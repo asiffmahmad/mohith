@@ -1,8 +1,11 @@
 {
-  "name": "Purna Sai",
-  "title": "Data Analyst & Business Intelligence Engineer",
-  "email": "hello@purnasai.com",
-  "phone": "+1 234 567 8900",
-  "location": "New York, USA",
-  "resumeUrl": "/resume.pdf"
+  "name": "Purna Venkata Satya Sai Kapa",
+  "displayName": "Purna Sai",
+  "role": "Data Analyst | Business Intelligence Engineer | Azure Data Engineer",
+  "headline": "Transforming Enterprise Data into Actionable Business Intelligence.",
+  "email": "Kapasatyasai1999@gmail.com",
+  "phone": "+44 7554809913",
+  "location": "Kettering, London, United Kingdom",
+  "resumeUrl": "/resume.pdf",
+  "rightToWork": "Eligible to work in the UK (Post Study Work Visa)"
 }

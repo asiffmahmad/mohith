@@ -1,10 +1,40 @@
 [
- {
-   "company": "Tech Corp",
-   "role": "Data Analyst",
-   "duration": "2020 - Present",
-   "location": "New York, USA",
-   "description": "Led data analysis initiatives, driving a 20% increase in operational efficiency.",
-   "technologies": ["Python", "SQL", "Tableau", "PowerBI"]
- }
+  {
+    "company": "Infosys Ltd",
+    "role": "Senior Systems Engineer",
+    "duration": "January 2023 – September 2024",
+    "location": "Telangana",
+    "description": "Reduced manual reporting effort by 60% and improved reporting accuracy. Delivered enterprise Power BI dashboards for Microsoft and improved operational efficiency using ETL automation.",
+    "responsibilities": [
+      "Designed Azure Data Factory ETL pipelines.",
+      "Automated enterprise data ingestion.",
+      "Performed data transformation.",
+      "Developed Power BI dashboards.",
+      "Analyzed enterprise datasets using SQL.",
+      "Worked with Azure Databricks.",
+      "Used Python for analytics.",
+      "Performed data validation, reconciliation, and cleansing.",
+      "Gathered reporting requirements from business stakeholders.",
+      "Performed root cause analysis and prepared technical documentation.",
+      "Supported Azure Governance and Compliance initiatives."
+    ],
+    "technologies": ["Azure Data Factory", "Azure Databricks", "SQL", "Python", "Power BI", "Azure"]
+  },
+  {
+    "company": "Infosys Ltd",
+    "role": "Systems Engineer",
+    "duration": "January 2022 – January 2023",
+    "location": "Telangana",
+    "description": "Supported enterprise data integration and automated reporting pipelines.",
+    "responsibilities": [
+      "Developed SQL queries.",
+      "Built Power BI dashboards.",
+      "Supported ETL development.",
+      "Performed enterprise data integration, transformation, and cleansing.",
+      "Automated reporting.",
+      "Maintained reporting documentation.",
+      "Worked with business stakeholders."
+    ],
+    "technologies": ["SQL", "Power BI", "ETL", "Excel", "Azure"]
+  }
 ]
