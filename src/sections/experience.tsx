@@ -5,58 +5,57 @@ import experience from "@/data/experience.json";
 
 export function Experience() {
   return (
-    <section id="experience" className="py-32 relative">
-      <div className="container mx-auto px-6 max-w-4xl">
+    <section id="experience" className="py-32 relative bg-black border-t border-white/10">
+      <div className="container mx-auto px-6 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16"
+          className="mb-24"
         >
-          <h2 className="text-4xl md:text-5xl font-medium tracking-tight mb-4">
-            Career <span className="text-white/50">Journey.</span>
+          <h2 className="text-4xl md:text-5xl font-medium tracking-tight">
+            Experience
           </h2>
-          <div className="w-20 h-px bg-gradient-to-r from-bmw-blue to-transparent"></div>
         </motion.div>
 
-        <div className="relative border-l border-white/10 ml-4 md:ml-0 md:pl-8 space-y-16">
+        <div className="flex flex-col gap-24">
           {experience.map((job, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="relative group"
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 relative"
             >
-              {/* Timeline dot */}
-              <div className="absolute -left-[25px] md:-left-[41px] top-2 w-4 h-4 rounded-full bg-[#080808] border border-white/20 group-hover:border-bmw-blue group-hover:bg-bmw-blue/20 transition-colors z-10" />
-              
-              <div className="glass rounded-3xl p-8 hover:bg-white/[0.02] transition-colors">
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-                  <div>
-                    <h3 className="text-2xl font-medium text-white mb-1">{job.role}</h3>
-                    <p className="text-lg text-white/60">{job.company}</p>
-                  </div>
-                  <div className="text-sm font-medium tracking-wider uppercase text-white/40 bg-white/5 px-4 py-2 rounded-full w-fit">
-                    {job.duration}
-                  </div>
-                </div>
-
-                <p className="text-white/70 leading-relaxed mb-6 font-light">{job.description}</p>
+              {/* Left Column: Metadata */}
+              <div className="md:col-span-4 flex flex-col items-start pt-2">
+                <h3 className="text-2xl font-medium text-white mb-2">{job.company}</h3>
+                <p className="text-lg text-white/60 mb-6">{job.role}</p>
                 
-                <ul className="space-y-3 mb-8">
+                <div className="flex flex-col gap-2 text-sm text-white/40 uppercase tracking-widest font-medium">
+                  <span>{job.duration}</span>
+                  <span>{job.location}</span>
+                </div>
+              </div>
+
+              {/* Right Column: Details */}
+              <div className="md:col-span-8 flex flex-col">
+                <h4 className="text-sm font-medium text-white/40 uppercase tracking-widest mb-6">Responsibilities & Achievements</h4>
+                
+                <ul className="space-y-4 mb-12 border-l border-white/10 pl-6">
                   {job.responsibilities.map((resp, i) => (
-                    <li key={i} className="flex items-start gap-3 text-white/60 text-sm">
-                      <span className="w-1.5 h-1.5 rounded-full bg-bmw-blue/50 mt-1.5 shrink-0" />
-                      <span className="leading-relaxed">{resp}</span>
+                    <li key={i} className="text-lg text-white/70 font-light leading-relaxed">
+                      {resp}
                     </li>
                   ))}
                 </ul>
 
-                <div className="flex flex-wrap gap-2 pt-6 border-t border-white/5">
+                <h4 className="text-sm font-medium text-white/40 uppercase tracking-widest mb-6">Technologies</h4>
+                
+                <div className="flex flex-wrap gap-2">
                   {job.technologies.map((tech, i) => (
-                    <span key={i} className="text-xs font-medium px-3 py-1.5 rounded-full bg-white/5 text-white/70 border border-white/10 group-hover:border-white/20 transition-colors">
+                    <span key={i} className="text-sm font-medium px-4 py-2 bg-white/5 text-white/70 tracking-wide">
                       {tech}
                     </span>
                   ))}

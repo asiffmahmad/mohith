@@ -4,18 +4,19 @@
   "statistics": [
     {
       "label": "Years Experience",
-      "value": 2.8,
-      "suffix": "+"
-    },
-    {
-      "label": "Companies Worked",
-      "value": 1,
-      "suffix": ""
+      "value": "2.8+"
     },
     {
       "label": "Reporting Automation",
-      "value": 60,
-      "suffix": "%"
+      "value": "60%"
+    },
+    {
+      "label": "Enterprise Client",
+      "value": "Microsoft"
+    },
+    {
+      "label": "Highest Qualification",
+      "value": "MSc Data Science"
     }
   ]
 }

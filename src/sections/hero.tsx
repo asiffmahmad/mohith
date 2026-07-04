@@ -1,105 +1,67 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Download, Link as LinkIcon, Code } from "lucide-react";
 import profile from "@/data/profile.json";
-import about from "@/data/about.json";
 
 export function Hero() {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-        delayChildren: 0.2,
-      },
+      transition: { staggerChildren: 0.2, delayChildren: 0.1 },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const } },
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] as const } },
   };
 
-  return (
-    <section className="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute inset-0 bg-[#080808] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/[0.03] via-[#080808] to-[#080808]"></div>
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-bmw-blue/10 rounded-full blur-[128px] mix-blend-screen" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-bmw-red/10 rounded-full blur-[128px] mix-blend-screen" />
-      </div>
+  const roles = [
+    "Data Analyst",
+    "Business Intelligence Engineer",
+    "Azure Data Engineer"
+  ];
 
-      <div className="container mx-auto px-6 relative z-10">
+  return (
+    <section className="relative h-screen flex flex-col justify-center bg-black overflow-hidden px-6">
+
+      <div className="container mx-auto max-w-7xl relative z-10">
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="max-w-4xl"
+          className="flex flex-col items-start"
         >
-          <motion.div variants={itemVariants} className="mb-6 inline-flex items-center gap-3">
-            <span className="w-8 h-px bg-bmw-blue"></span>
-            <span className="text-bmw-blue font-medium tracking-widest uppercase text-sm">Hello, I&apos;m</span>
-          </motion.div>
-
-          <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight mb-4">
+          <motion.h1 
+            variants={itemVariants} 
+            className="text-5xl md:text-7xl lg:text-9xl font-medium tracking-tighter mb-8 leading-[1.1] text-white"
+          >
             {profile.name}
           </motion.h1>
 
-          <motion.h2 variants={itemVariants} className="text-xl md:text-3xl text-white/70 font-light mb-8">
-            {profile.role.split(' | ').map((role, i, arr) => (
-              <span key={i}>
-                {role}
-                {i < arr.length - 1 && <span className="mx-3 text-white/20">|</span>}
-              </span>
+          <motion.div variants={itemVariants} className="flex flex-col md:flex-row md:items-center gap-4 md:gap-12 mb-16">
+            {roles.map((role, i) => (
+              <div key={i} className="flex items-center gap-4">
+                <span className="text-xl md:text-2xl text-white/50 font-light tracking-wide">{role}</span>
+                {i < roles.length - 1 && <span className="hidden md:block w-1.5 h-1.5 rounded-full bg-white/20"></span>}
+              </div>
             ))}
-          </motion.h2>
+          </motion.div>
 
-          <motion.p variants={itemVariants} className="text-lg md:text-xl text-white/50 max-w-3xl mb-12 font-light leading-relaxed">
-            {about.summary}
-          </motion.p>
-
-          <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-4 md:gap-6">
-            <a 
-              href="#contact" 
-              className="group relative inline-flex items-center gap-2 px-8 py-4 bg-white text-black rounded-full font-medium overflow-hidden transition-transform hover:scale-105 active:scale-95"
-            >
-              <span className="relative z-10 flex items-center gap-2">
-                Contact Me <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-              </span>
+          <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-8 text-sm md:text-base font-medium uppercase tracking-widest text-white/70">
+            <a href="#summary" className="hover:text-white transition-colors py-2 border-b border-transparent hover:border-white">
+              Professional Summary
             </a>
-            
-            <a 
-              href={profile.resumeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 px-8 py-4 bg-white/5 border border-white/10 hover:border-white/20 hover:bg-white/10 rounded-full font-medium transition-all"
-            >
-              <Download size={18} className="text-white/60 group-hover:text-white transition-colors" />
+            <a href={profile.resumeUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors py-2 border-b border-transparent hover:border-white">
               Download Resume
             </a>
-
-            <div className="flex items-center gap-3 ml-2">
-              <a 
-                href="https://linkedin.com/in/purna-venkata-satya-sai-kapa-a50447217" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-4 rounded-full bg-white/5 border border-white/10 hover:border-bmw-blue hover:text-bmw-blue hover:bg-bmw-blue/10 transition-all"
-                aria-label="LinkedIn"
-              >
-                <LinkIcon size={20} />
-              </a>
-              <a 
-                href="https://github.com/asiffmahmad" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-4 rounded-full bg-white/5 border border-white/10 hover:border-white/40 hover:text-white hover:bg-white/10 transition-all"
-                aria-label="GitHub"
-              >
-                <Code size={20} />
-              </a>
-            </div>
+            <a href="#contact" className="hover:text-white transition-colors py-2 border-b border-transparent hover:border-white">
+              Contact
+            </a>
+            <a href="https://linkedin.com/in/purna-venkata-satya-sai-kapa-a50447217" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors py-2 border-b border-transparent hover:border-white">
+              LinkedIn
+            </a>
           </motion.div>
         </motion.div>
       </div>

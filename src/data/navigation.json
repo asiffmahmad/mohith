@@ -1,8 +1,10 @@
 [
-  { "name": "About", "href": "#about" },
+  { "name": "Summary", "href": "#summary" },
+  { "name": "Highlights", "href": "#highlights" },
   { "name": "Experience", "href": "#experience" },
-  { "name": "Expertise", "href": "#expertise" },
-  { "name": "Projects", "href": "#projects" },
+  { "name": "Featured Project", "href": "#project" },
+  { "name": "Professional Skills", "href": "#skills" },
+  { "name": "Certifications", "href": "#certifications" },
   { "name": "Education", "href": "#education" },
   { "name": "Contact", "href": "#contact" }
 ]

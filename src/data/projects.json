@@ -1,21 +1,13 @@
 [
   {
     "title": "AI Based Prediction System For Slow Payment Transactions",
-    "description": "Developed an end-to-end Machine Learning system to predict slow payment transactions using historical financial datasets. Improved prediction accuracy by 50%.",
-    "image": "",
+    "description": "Developed an end-to-end Machine Learning system to predict slow payment transactions using historical financial datasets.",
+    "businessProblem": "High volume of slow payment transactions resulting in operational inefficiencies and cash flow bottlenecks for enterprise finance teams.",
+    "solution": "Engineered an automated prediction model using Logistic Regression, Random Forest, and Neural Networks to identify at-risk transactions before processing.",
+    "businessImpact": "Improved prediction accuracy by 50%, enabling proactive intervention and reducing late payment processing overhead.",
     "github": "",
     "live": "",
     "stack": ["Python", "SQL", "Machine Learning", "Azure Machine Learning", "Streamlit", "Plotly"],
-    "features": [
-      "Exploratory Data Analysis",
-      "Feature Engineering",
-      "Logistic Regression",
-      "Random Forest model",
-      "Neural Networks",
-      "Azure Machine Learning pipelines",
-      "Streamlit dashboard",
-      "Plotly visualizations"
-    ],
     "year": "Recent",
     "category": "Machine Learning"
   }

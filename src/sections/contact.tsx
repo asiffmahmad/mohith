@@ -35,19 +35,19 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-32 relative">
+    <section id="contact" className="py-32 relative bg-black border-t border-white/10">
       <div className="container mx-auto px-6 max-w-5xl">
         
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16 text-center"
+          className="mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-medium tracking-tight mb-4">
-            Let&apos;s <span className="text-white/50">Connect.</span>
+          <h2 className="text-4xl md:text-5xl font-medium tracking-tight mb-4 text-white">
+            Contact
           </h2>
-          <p className="text-white/50 max-w-xl mx-auto">
+          <p className="text-white/50 max-w-xl">
             Currently looking for opportunities in Data Analytics, Business Intelligence, and Data Engineering. 
             Feel free to reach out.
           </p>
@@ -62,37 +62,37 @@ export function Contact() {
             viewport={{ once: true, margin: "-100px" }}
             className="flex flex-col justify-center"
           >
-            <div className="space-y-8 mb-12">
+            <div className="space-y-12 mb-16">
               <div>
-                <h4 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-2">Email</h4>
-                <a href={`mailto:${contactData.email}`} className="text-xl md:text-2xl font-medium hover:text-bmw-blue transition-colors">
+                <h4 className="text-xs font-medium text-white/40 uppercase tracking-widest mb-3 border-b border-white/10 pb-2 inline-block">Email</h4>
+                <a href={`mailto:${contactData.email}`} className="block text-xl md:text-2xl font-light hover:text-white/70 transition-colors">
                   {contactData.email}
                 </a>
               </div>
               
               <div>
-                <h4 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-2">Phone</h4>
-                <a href={`tel:${contactData.phone}`} className="text-xl md:text-2xl font-medium hover:text-bmw-blue transition-colors">
+                <h4 className="text-xs font-medium text-white/40 uppercase tracking-widest mb-3 border-b border-white/10 pb-2 inline-block">Phone</h4>
+                <a href={`tel:${contactData.phone}`} className="block text-xl md:text-2xl font-light hover:text-white/70 transition-colors">
                   {contactData.phone}
                 </a>
               </div>
 
               <div>
-                <h4 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-2">Location</h4>
-                <p className="text-xl font-medium text-white/90">
+                <h4 className="text-xs font-medium text-white/40 uppercase tracking-widest mb-3 border-b border-white/10 pb-2 inline-block">Location</h4>
+                <p className="text-xl md:text-2xl font-light text-white">
                   {contactData.location}
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center gap-4 pt-8 border-t border-white/10">
+            <div className="flex flex-wrap items-center gap-6 pt-8 border-t border-white/10">
               {socialsData.map((social) => (
                 <a
                   key={social.name}
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all text-sm font-medium"
+                  className="text-sm font-medium tracking-widest uppercase hover:text-white/60 transition-colors"
                 >
                   {social.name}
                 </a>
@@ -106,41 +106,40 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            <form onSubmit={handleSubmit} className="glass p-8 md:p-10 rounded-3xl border border-white/10 flex flex-col gap-6 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-bmw-blue/10 blur-[100px] pointer-events-none" />
+            <form onSubmit={handleSubmit} className="p-8 md:p-12 border border-white/10 flex flex-col gap-8 bg-black">
               
-              <div className="flex flex-col gap-2">
-                <label htmlFor="user_name" className="text-sm font-medium text-white/60">Name</label>
+              <div className="flex flex-col gap-3">
+                <label htmlFor="user_name" className="text-xs font-medium text-white/40 uppercase tracking-widest">Name</label>
                 <input
                   type="text"
                   name="user_name"
                   id="user_name"
                   required
-                  className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bmw-blue/50 focus:ring-1 focus:ring-bmw-blue/50 transition-all placeholder:text-white/20"
+                  className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-white transition-all placeholder:text-white/20 rounded-none"
                   placeholder="John Doe"
                 />
               </div>
 
-              <div className="flex flex-col gap-2">
-                <label htmlFor="user_email" className="text-sm font-medium text-white/60">Email</label>
+              <div className="flex flex-col gap-3">
+                <label htmlFor="user_email" className="text-xs font-medium text-white/40 uppercase tracking-widest">Email</label>
                 <input
                   type="email"
                   name="user_email"
                   id="user_email"
                   required
-                  className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bmw-blue/50 focus:ring-1 focus:ring-bmw-blue/50 transition-all placeholder:text-white/20"
+                  className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-white transition-all placeholder:text-white/20 rounded-none"
                   placeholder="john@example.com"
                 />
               </div>
 
-              <div className="flex flex-col gap-2">
-                <label htmlFor="message" className="text-sm font-medium text-white/60">Message</label>
+              <div className="flex flex-col gap-3">
+                <label htmlFor="message" className="text-xs font-medium text-white/40 uppercase tracking-widest">Message</label>
                 <textarea
                   name="message"
                   id="message"
                   required
                   rows={4}
-                  className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-bmw-blue/50 focus:ring-1 focus:ring-bmw-blue/50 transition-all resize-none placeholder:text-white/20"
+                  className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-white transition-all resize-none placeholder:text-white/20 rounded-none"
                   placeholder="How can I help you?"
                 />
               </div>
@@ -148,20 +147,17 @@ export function Contact() {
               <button
                 type="submit"
                 disabled={status === "loading" || status === "success"}
-                className="group relative flex items-center justify-center h-14 w-full rounded-xl bg-white text-black font-medium overflow-hidden transition-transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-70 disabled:hover:scale-100 mt-2"
+                className="group flex items-center justify-between text-sm font-medium bg-white text-black px-6 py-4 transition-transform hover:scale-[1.02] mt-4 disabled:opacity-70 disabled:hover:scale-100 uppercase tracking-widest"
               >
-                <span className="relative z-10 flex items-center gap-2">
-                  {status === "idle" && (
-                    <>Send Message <Send size={18} className="group-hover:translate-x-1 transition-transform" /></>
-                  )}
+                <span>
+                  {status === "idle" && "Send Message"}
                   {status === "loading" && "Sending..."}
-                  {status === "success" && (
-                    <><CheckCircle2 size={18} className="text-green-600" /> Sent Successfully!</>
-                  )}
-                  {status === "error" && (
-                    <><AlertCircle size={18} className="text-red-600" /> Failed to send.</>
-                  )}
+                  {status === "success" && "Sent Successfully!"}
+                  {status === "error" && "Failed to send."}
                 </span>
+                {status === "idle" && (
+                  <Send size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                )}
               </button>
             </form>
           </motion.div>
